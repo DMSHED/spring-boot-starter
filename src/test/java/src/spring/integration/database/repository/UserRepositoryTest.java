@@ -20,9 +20,9 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@IT
+//@IT
 @RequiredArgsConstructor
-public class UserRepositoryTest {
+public class UserRepositoryTest extends IntegrationTestBase{
 
     private final UserRepository userRepository;
 

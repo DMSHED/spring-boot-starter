@@ -1,16 +1,20 @@
-DROP TABLE users;
-DROP TABLE company CASCADE;
-DROP TABLE company_locales CASCADE;
-DROP TABLE payment CASCADE;
-DROP TABLE chat CASCADE;
-DROP TABLE users_chat CASCADE;
+--liquibase formatted sql
+-- указываем в каком формате, обязательно
 
+--Каждый set накатывается в рамках одной транзакции
+--от 1-го до 2-го одна транзакция и тд. можно просто один set указать
+--все будет одной транзакцией
+
+--changeset dmshed:1
 CREATE TABLE IF NOT EXISTS company
 (
     id SERIAL PRIMARY KEY ,
     name VARCHAR(64) NOT NULL UNIQUE
 );
+--если хотим добавить ролбэк функциональности
+--rollback DROP TABLE company;
 
+--changeset dmshed:2
 CREATE TABLE IF NOT EXISTS company_locales
 (
     company_id INT REFERENCES company (id),
@@ -19,6 +23,7 @@ CREATE TABLE IF NOT EXISTS company_locales
     PRIMARY KEY (company_id, lang)
 );
 
+--changeset dmshed:3
 CREATE TABLE IF NOT EXISTS users
 (
     id BIGSERIAL PRIMARY KEY ,
@@ -30,6 +35,7 @@ CREATE TABLE IF NOT EXISTS users
     company_id INT REFERENCES company (id)
 );
 
+--changeset dmshed:4
 CREATE TABLE IF NOT EXISTS payment
 (
     id BIGSERIAL PRIMARY KEY ,
@@ -37,12 +43,14 @@ CREATE TABLE IF NOT EXISTS payment
     receiver_id BIGINT NOT NULL REFERENCES users (id)
 );
 
+--changeset dmshed:5
 CREATE TABLE IF NOT EXISTS chat
 (
     id BIGSERIAL PRIMARY KEY ,
     name VARCHAR(64) NOT NULL UNIQUE
 );
 
+--changeset dmshed:6
 CREATE TABLE IF NOT EXISTS users_chat
 (
     id BIGSERIAL PRIMARY KEY ,

@@ -16,7 +16,7 @@ import src.spring.integration.annotation.IT;
 public abstract class IntegrationTestBase {
 
     //указываем в параметрах docker image
-    private static final PostgreSQLContainer<?> container = new PostgreSQLContainer<>("postgres:14.1");
+    private static final PostgreSQLContainer<?> container = new PostgreSQLContainer<>("postgres:latest");
 
     @BeforeAll
     static void runContainer() {
