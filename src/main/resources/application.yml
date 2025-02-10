@@ -1,0 +1,32 @@
+logging:
+  level:
+    root: info
+    # update logging level for JDBC
+    org:
+      springframework:
+        jdbc:
+          core: trace
+  file:
+    name: dmshed.log
+    path: /
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        # create or update or validate ddl
+        hbm2ddl:
+          auto: validate
+        jdbc:
+          #for update, delete
+          batch_size: 50
+          #for select
+          fetch_size: 50
+
