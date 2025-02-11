@@ -607,3 +607,519 @@ Caused by: java.net.ConnectException: В соединении отказано
 2025-02-10T20:57:36.273+03:00  WARN 5397 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-02-10T20:57:36.558+03:00  INFO 5397 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-02-10T20:57:36.565+03:00  INFO 5397 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 5.52 seconds (process running for 6.264)
+2025-02-10T21:05:54.461+03:00  INFO 5397 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T21:05:54.465+03:00  INFO 5397 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T21:05:54.471+03:00  INFO 5397 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T21:05:54.471+03:00  INFO 5397 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T21:05:54.472+03:00  INFO 5397 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T21:05:54.472+03:00  INFO 5397 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T21:05:54.475+03:00  INFO 5397 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T21:05:54.480+03:00  INFO 5397 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-10T21:15:48.562+03:00  INFO 6810 --- [main] src.spring.ApplicationRunner             : Starting ApplicationRunner using Java 21.0.6 with PID 6810 (/home/dm/JavaWorkspace/spring-boot-starter/build/classes/java/main started by dm in /home/dm/JavaWorkspace/spring-boot-starter)
+2025-02-10T21:15:48.565+03:00  INFO 6810 --- [main] src.spring.ApplicationRunner             : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T21:15:49.184+03:00  INFO 6810 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T21:15:49.257+03:00  INFO 6810 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2025-02-10T21:15:50.252+03:00  INFO 6810 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-10T21:15:50.268+03:00  INFO 6810 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-10T21:15:50.269+03:00  INFO 6810 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-10T21:15:50.457+03:00  INFO 6810 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-02-10T21:15:50.473+03:00  INFO 6810 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-10T21:15:50.474+03:00  INFO 6810 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1848 ms
+2025-02-10T21:15:50.650+03:00  INFO 6810 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T21:15:50.833+03:00  INFO 6810 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d36c1c3
+2025-02-10T21:15:50.835+03:00  INFO 6810 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T21:15:51.015+03:00  INFO 6810 --- [main] liquibase.database                       : Set default schema name to public
+2025-02-10T21:15:51.460+03:00  INFO 6810 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T21:15:51.513+03:00  INFO 6810 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-02-10T21:15:51.516+03:00  INFO 6810 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T21:15:51.526+03:00  INFO 6810 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-02-10T21:15:51.527+03:00  INFO 6810 --- [main] liquibase.util                           : Run:                          0
+2025-02-10T21:15:51.527+03:00  INFO 6810 --- [main] liquibase.util                           : Previously run:               8
+2025-02-10T21:15:51.527+03:00  INFO 6810 --- [main] liquibase.util                           : Filtered out:                 0
+2025-02-10T21:15:51.527+03:00  INFO 6810 --- [main] liquibase.util                           : -------------------------------
+2025-02-10T21:15:51.527+03:00  INFO 6810 --- [main] liquibase.util                           : Total change sets:            8
+2025-02-10T21:15:51.528+03:00  INFO 6810 --- [main] liquibase.util                           : Update summary generated
+2025-02-10T21:15:51.530+03:00  INFO 6810 --- [main] liquibase.command                        : Command execution complete
+2025-02-10T21:15:51.638+03:00  INFO 6810 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T21:15:51.698+03:00  INFO 6810 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T21:15:51.730+03:00  INFO 6810 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T21:15:51.809+03:00  INFO 6810 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2025-02-10T21:15:51.992+03:00  INFO 6810 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T21:15:52.057+03:00  INFO 6810 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T21:15:52.301+03:00  INFO 6810 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: src.spring.database.entity.User
+2025-02-10T21:15:52.917+03:00  INFO 6810 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T21:15:53.202+03:00  INFO 6810 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T21:15:53.209+03:00  INFO 6810 --- [main] src.spring.config.JpaConfiguration       : JpaConfiguration init
+2025-02-10T21:15:53.212+03:00  INFO 6810 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T21:15:53.365+03:00  INFO 6810 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T21:15:53.694+03:00  INFO 6810 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T21:15:53.695+03:00  INFO 6810 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T21:15:53.737+03:00  WARN 6810 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T21:15:53.989+03:00  INFO 6810 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-10T21:15:53.996+03:00  INFO 6810 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 6.019 seconds (process running for 6.713)
+2025-02-10T21:30:40.479+03:00  INFO 6810 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T21:30:40.483+03:00  INFO 6810 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T21:30:40.495+03:00  INFO 6810 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T21:30:40.496+03:00  INFO 6810 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T21:30:40.497+03:00  INFO 6810 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T21:30:40.497+03:00  INFO 6810 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T21:30:40.500+03:00  INFO 6810 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T21:30:40.504+03:00  INFO 6810 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-10T22:39:26.221+03:00  INFO 9625 --- [main] src.spring.ApplicationRunner             : Starting ApplicationRunner using Java 21.0.6 with PID 9625 (/home/dm/JavaWorkspace/spring-boot-starter/build/classes/java/main started by dm in /home/dm/JavaWorkspace/spring-boot-starter)
+2025-02-10T22:39:26.223+03:00  INFO 9625 --- [main] src.spring.ApplicationRunner             : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T22:39:26.559+03:00  INFO 9625 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T22:39:26.600+03:00  INFO 9625 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2025-02-10T22:39:27.135+03:00  INFO 9625 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-10T22:39:27.145+03:00  INFO 9625 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-10T22:39:27.146+03:00  INFO 9625 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-10T22:39:27.245+03:00  INFO 9625 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-02-10T22:39:27.248+03:00  INFO 9625 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-10T22:39:27.248+03:00  INFO 9625 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 994 ms
+2025-02-10T22:39:27.346+03:00  INFO 9625 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T22:39:27.436+03:00  INFO 9625 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c97721b
+2025-02-10T22:39:27.437+03:00  INFO 9625 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T22:39:27.523+03:00  INFO 9625 --- [main] liquibase.database                       : Set default schema name to public
+2025-02-10T22:39:27.749+03:00  INFO 9625 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:39:27.775+03:00  INFO 9625 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-02-10T22:39:27.777+03:00  INFO 9625 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:39:27.782+03:00  INFO 9625 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-02-10T22:39:27.783+03:00  INFO 9625 --- [main] liquibase.util                           : Run:                          0
+2025-02-10T22:39:27.783+03:00  INFO 9625 --- [main] liquibase.util                           : Previously run:               8
+2025-02-10T22:39:27.783+03:00  INFO 9625 --- [main] liquibase.util                           : Filtered out:                 0
+2025-02-10T22:39:27.783+03:00  INFO 9625 --- [main] liquibase.util                           : -------------------------------
+2025-02-10T22:39:27.783+03:00  INFO 9625 --- [main] liquibase.util                           : Total change sets:            8
+2025-02-10T22:39:27.784+03:00  INFO 9625 --- [main] liquibase.util                           : Update summary generated
+2025-02-10T22:39:27.785+03:00  INFO 9625 --- [main] liquibase.command                        : Command execution complete
+2025-02-10T22:39:27.840+03:00  INFO 9625 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T22:39:27.874+03:00  INFO 9625 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T22:39:27.894+03:00  INFO 9625 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T22:39:27.944+03:00  INFO 9625 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2025-02-10T22:39:28.089+03:00  INFO 9625 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T22:39:28.135+03:00  INFO 9625 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T22:39:28.306+03:00  INFO 9625 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: src.spring.database.entity.User
+2025-02-10T22:39:28.849+03:00  INFO 9625 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T22:39:29.127+03:00  INFO 9625 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:39:29.133+03:00  INFO 9625 --- [main] src.spring.config.JpaConfiguration       : JpaConfiguration init
+2025-02-10T22:39:29.137+03:00  INFO 9625 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:39:29.281+03:00  INFO 9625 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T22:39:29.617+03:00  INFO 9625 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:39:29.617+03:00  INFO 9625 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:39:29.663+03:00  WARN 9625 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T22:39:29.929+03:00  INFO 9625 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-10T22:39:29.936+03:00  INFO 9625 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 4.099 seconds (process running for 4.506)
+2025-02-10T22:40:05.056+03:00  INFO 9625 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-10T22:40:05.056+03:00  INFO 9625 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-10T22:40:05.057+03:00  INFO 9625 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-10T22:40:52.392+03:00  INFO 9625 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x120x010x000x070x0e0x030x033<0xa70x910xdev0xe30xbc0x13f90xd10xd29g0xcd0xb2q0xd70x1d0xd10xe80xf60x910xd53u0x09\0x140xa1R ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-10T22:40:52.394+03:00  INFO 9625 --- [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x030xce0xbd0xfc0x870xb30x18i0xa40xd1_0xe00x11^C0x9f0x0e\0xd70x02a0xabo0xaa0x11B0xd10xd30x110x950x870xe40xd6 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-10T22:41:42.762+03:00  INFO 9625 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T22:41:42.764+03:00  INFO 9625 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T22:41:42.768+03:00  INFO 9625 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:41:42.768+03:00  INFO 9625 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:41:42.768+03:00  INFO 9625 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:41:42.769+03:00  INFO 9625 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:41:42.770+03:00  INFO 9625 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T22:41:42.772+03:00  INFO 9625 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-10T22:41:58.034+03:00  INFO 10103 --- [main] src.spring.ApplicationRunner             : Starting ApplicationRunner using Java 21.0.6 with PID 10103 (/home/dm/JavaWorkspace/spring-boot-starter/build/classes/java/main started by dm in /home/dm/JavaWorkspace/spring-boot-starter)
+2025-02-10T22:41:58.035+03:00  INFO 10103 --- [main] src.spring.ApplicationRunner             : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T22:41:58.389+03:00  INFO 10103 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T22:41:58.432+03:00  INFO 10103 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-02-10T22:41:58.985+03:00  INFO 10103 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-10T22:41:58.995+03:00  INFO 10103 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-10T22:41:58.995+03:00  INFO 10103 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-10T22:41:59.093+03:00  INFO 10103 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-02-10T22:41:59.096+03:00  INFO 10103 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-10T22:41:59.096+03:00  INFO 10103 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1023 ms
+2025-02-10T22:41:59.187+03:00  INFO 10103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T22:41:59.290+03:00  INFO 10103 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35fa450f
+2025-02-10T22:41:59.291+03:00  INFO 10103 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T22:41:59.378+03:00  INFO 10103 --- [main] liquibase.database                       : Set default schema name to public
+2025-02-10T22:41:59.599+03:00  INFO 10103 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:41:59.626+03:00  INFO 10103 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-02-10T22:41:59.628+03:00  INFO 10103 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:41:59.634+03:00  INFO 10103 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-02-10T22:41:59.634+03:00  INFO 10103 --- [main] liquibase.util                           : Run:                          0
+2025-02-10T22:41:59.634+03:00  INFO 10103 --- [main] liquibase.util                           : Previously run:               8
+2025-02-10T22:41:59.634+03:00  INFO 10103 --- [main] liquibase.util                           : Filtered out:                 0
+2025-02-10T22:41:59.634+03:00  INFO 10103 --- [main] liquibase.util                           : -------------------------------
+2025-02-10T22:41:59.634+03:00  INFO 10103 --- [main] liquibase.util                           : Total change sets:            8
+2025-02-10T22:41:59.635+03:00  INFO 10103 --- [main] liquibase.util                           : Update summary generated
+2025-02-10T22:41:59.636+03:00  INFO 10103 --- [main] liquibase.command                        : Command execution complete
+2025-02-10T22:41:59.693+03:00  INFO 10103 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T22:41:59.728+03:00  INFO 10103 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T22:41:59.748+03:00  INFO 10103 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T22:41:59.799+03:00  INFO 10103 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2025-02-10T22:41:59.950+03:00  INFO 10103 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T22:41:59.997+03:00  INFO 10103 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T22:42:00.168+03:00  INFO 10103 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: src.spring.database.entity.User
+2025-02-10T22:42:00.763+03:00  INFO 10103 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T22:42:01.075+03:00  INFO 10103 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:42:01.083+03:00  INFO 10103 --- [main] src.spring.config.JpaConfiguration       : JpaConfiguration init
+2025-02-10T22:42:01.088+03:00  INFO 10103 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:42:01.232+03:00  INFO 10103 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T22:42:01.547+03:00  INFO 10103 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:42:01.548+03:00  INFO 10103 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:42:01.597+03:00  WARN 10103 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T22:42:01.844+03:00  INFO 10103 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-10T22:42:01.850+03:00  INFO 10103 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 4.132 seconds (process running for 4.483)
+2025-02-10T22:42:07.550+03:00  INFO 10103 --- [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xf20x010x000x060xee0x030x030x040xad0xe8E0x910x0d0x070x060xcbU0xb70xc20x190xde0xf4;0xb60xf20xd6a0xc20xedRB0xe50xacp0xf7l0xff0xa3D ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-10T22:42:07.550+03:00  INFO 10103 --- [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xf20x010x000x060xee0x030x030x9fhg0xa2H0x13p0xcck0xdd0x900x940x0f0x1a0xc10xf80xc00xd6'0x870xc30x81Ku0xa10xf20x8c0xf7BxZC ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-10T22:43:43.929+03:00  INFO 10103 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-10T22:43:43.929+03:00  INFO 10103 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-10T22:43:43.931+03:00  INFO 10103 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-10T22:47:49.904+03:00  INFO 10103 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T22:47:49.906+03:00  INFO 10103 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T22:47:49.910+03:00  INFO 10103 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:47:49.910+03:00  INFO 10103 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:47:49.910+03:00  INFO 10103 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:47:49.910+03:00  INFO 10103 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:47:49.912+03:00  INFO 10103 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T22:47:49.914+03:00  INFO 10103 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-10T22:48:09.884+03:00  INFO 10697 --- [main] src.spring.ApplicationRunner             : Starting ApplicationRunner using Java 21.0.6 with PID 10697 (/home/dm/JavaWorkspace/spring-boot-starter/build/classes/java/main started by dm in /home/dm/JavaWorkspace/spring-boot-starter)
+2025-02-10T22:48:09.886+03:00  INFO 10697 --- [main] src.spring.ApplicationRunner             : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T22:48:10.249+03:00  INFO 10697 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T22:48:10.292+03:00  INFO 10697 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-02-10T22:48:10.857+03:00  INFO 10697 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-10T22:48:10.868+03:00  INFO 10697 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-10T22:48:10.869+03:00  INFO 10697 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-10T22:48:10.961+03:00  INFO 10697 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-02-10T22:48:10.964+03:00  INFO 10697 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-10T22:48:10.964+03:00  INFO 10697 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1044 ms
+2025-02-10T22:48:11.055+03:00  INFO 10697 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T22:48:11.171+03:00  INFO 10697 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4db0ba1c
+2025-02-10T22:48:11.173+03:00  INFO 10697 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T22:48:11.334+03:00  INFO 10697 --- [main] liquibase.database                       : Set default schema name to public
+2025-02-10T22:48:11.546+03:00  INFO 10697 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:48:11.572+03:00  INFO 10697 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-02-10T22:48:11.574+03:00  INFO 10697 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:48:11.581+03:00  INFO 10697 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-02-10T22:48:11.581+03:00  INFO 10697 --- [main] liquibase.util                           : Run:                          0
+2025-02-10T22:48:11.581+03:00  INFO 10697 --- [main] liquibase.util                           : Previously run:               8
+2025-02-10T22:48:11.581+03:00  INFO 10697 --- [main] liquibase.util                           : Filtered out:                 0
+2025-02-10T22:48:11.581+03:00  INFO 10697 --- [main] liquibase.util                           : -------------------------------
+2025-02-10T22:48:11.582+03:00  INFO 10697 --- [main] liquibase.util                           : Total change sets:            8
+2025-02-10T22:48:11.582+03:00  INFO 10697 --- [main] liquibase.util                           : Update summary generated
+2025-02-10T22:48:11.583+03:00  INFO 10697 --- [main] liquibase.command                        : Command execution complete
+2025-02-10T22:48:11.641+03:00  INFO 10697 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T22:48:11.677+03:00  INFO 10697 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T22:48:11.699+03:00  INFO 10697 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T22:48:11.749+03:00  INFO 10697 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2025-02-10T22:48:11.873+03:00  INFO 10697 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T22:48:11.919+03:00  INFO 10697 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T22:48:12.092+03:00  INFO 10697 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: src.spring.database.entity.User
+2025-02-10T22:48:12.632+03:00  INFO 10697 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T22:48:12.901+03:00  INFO 10697 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:48:12.907+03:00  INFO 10697 --- [main] src.spring.config.JpaConfiguration       : JpaConfiguration init
+2025-02-10T22:48:12.910+03:00  INFO 10697 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:48:13.050+03:00  INFO 10697 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T22:48:13.362+03:00  INFO 10697 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:48:13.362+03:00  INFO 10697 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:48:13.403+03:00  WARN 10697 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T22:48:13.645+03:00  INFO 10697 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-10T22:48:13.652+03:00  INFO 10697 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 4.076 seconds (process running for 4.465)
+2025-02-10T22:48:15.693+03:00  INFO 10697 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-10T22:48:15.693+03:00  INFO 10697 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-10T22:48:15.694+03:00  INFO 10697 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-10T22:49:33.331+03:00  INFO 10697 --- [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x120x010x000x070x0e0x030x030x090xd20xf90x88$0xd1d0xc2H@0xcdB0xfd80xc60x95|y0xcc0x18tsO0x070xa60xa0E0x0d0xab0xed0xcd0x7f ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-10T22:49:33.330+03:00  INFO 10697 --- [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x03?]0x1aK8 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-10T22:57:25.436+03:00  INFO 10697 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T22:57:25.439+03:00  INFO 10697 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T22:57:25.441+03:00  INFO 10697 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:57:25.442+03:00  INFO 10697 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:57:25.442+03:00  INFO 10697 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:57:25.442+03:00  INFO 10697 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:57:25.444+03:00  INFO 10697 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T22:57:25.446+03:00  INFO 10697 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-10T22:57:55.641+03:00  INFO 11663 --- [main] src.spring.ApplicationRunner             : Starting ApplicationRunner using Java 21.0.6 with PID 11663 (/home/dm/JavaWorkspace/spring-boot-starter/build/classes/java/main started by dm in /home/dm/JavaWorkspace/spring-boot-starter)
+2025-02-10T22:57:55.643+03:00  INFO 11663 --- [main] src.spring.ApplicationRunner             : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T22:57:56.017+03:00  INFO 11663 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T22:57:56.075+03:00  INFO 11663 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2025-02-10T22:57:56.728+03:00  INFO 11663 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-10T22:57:56.739+03:00  INFO 11663 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-10T22:57:56.740+03:00  INFO 11663 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-10T22:57:56.881+03:00  INFO 11663 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-02-10T22:57:56.887+03:00  INFO 11663 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-10T22:57:56.888+03:00  INFO 11663 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2025-02-10T22:57:57.042+03:00  INFO 11663 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T22:57:57.175+03:00  INFO 11663 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37c2f0b4
+2025-02-10T22:57:57.177+03:00  INFO 11663 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T22:57:57.281+03:00  INFO 11663 --- [main] liquibase.database                       : Set default schema name to public
+2025-02-10T22:57:57.534+03:00  INFO 11663 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:57:57.563+03:00  INFO 11663 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-02-10T22:57:57.565+03:00  INFO 11663 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T22:57:57.572+03:00  INFO 11663 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-02-10T22:57:57.573+03:00  INFO 11663 --- [main] liquibase.util                           : Run:                          0
+2025-02-10T22:57:57.573+03:00  INFO 11663 --- [main] liquibase.util                           : Previously run:               8
+2025-02-10T22:57:57.573+03:00  INFO 11663 --- [main] liquibase.util                           : Filtered out:                 0
+2025-02-10T22:57:57.573+03:00  INFO 11663 --- [main] liquibase.util                           : -------------------------------
+2025-02-10T22:57:57.573+03:00  INFO 11663 --- [main] liquibase.util                           : Total change sets:            8
+2025-02-10T22:57:57.574+03:00  INFO 11663 --- [main] liquibase.util                           : Update summary generated
+2025-02-10T22:57:57.575+03:00  INFO 11663 --- [main] liquibase.command                        : Command execution complete
+2025-02-10T22:57:57.637+03:00  INFO 11663 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T22:57:57.683+03:00  INFO 11663 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T22:57:57.708+03:00  INFO 11663 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T22:57:57.781+03:00  INFO 11663 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2025-02-10T22:57:57.937+03:00  INFO 11663 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T22:57:57.994+03:00  INFO 11663 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T22:57:58.203+03:00  INFO 11663 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: src.spring.database.entity.User
+2025-02-10T22:57:58.835+03:00  INFO 11663 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T22:57:59.136+03:00  INFO 11663 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:57:59.142+03:00  INFO 11663 --- [main] src.spring.config.JpaConfiguration       : JpaConfiguration init
+2025-02-10T22:57:59.147+03:00  INFO 11663 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:57:59.324+03:00  INFO 11663 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T22:57:59.703+03:00  INFO 11663 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:57:59.704+03:00  INFO 11663 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T22:57:59.755+03:00  WARN 11663 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T22:58:00.058+03:00  INFO 11663 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-10T22:58:00.065+03:00  INFO 11663 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 4.802 seconds (process running for 5.77)
+2025-02-10T22:58:00.607+03:00  INFO 11663 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-10T22:58:00.607+03:00  INFO 11663 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-10T22:58:00.608+03:00  INFO 11663 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-10T22:58:40.576+03:00  INFO 11663 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T22:58:41.082+03:00  INFO 11663 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T22:58:41.085+03:00  INFO 11663 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:58:41.085+03:00  INFO 11663 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:58:41.086+03:00  INFO 11663 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T22:58:41.086+03:00  INFO 11663 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T22:58:41.088+03:00  INFO 11663 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T22:58:41.090+03:00  INFO 11663 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-10T23:04:31.499+03:00  INFO 13040 --- [main] src.spring.ApplicationRunner             : Starting ApplicationRunner using Java 21.0.6 with PID 13040 (/home/dm/JavaWorkspace/spring-boot-starter/build/classes/java/main started by dm in /home/dm/JavaWorkspace/spring-boot-starter)
+2025-02-10T23:04:31.501+03:00  INFO 13040 --- [main] src.spring.ApplicationRunner             : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T23:04:31.884+03:00  INFO 13040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T23:04:31.942+03:00  INFO 13040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2025-02-10T23:04:32.557+03:00  INFO 13040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-10T23:04:32.569+03:00  INFO 13040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-10T23:04:32.569+03:00  INFO 13040 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-10T23:04:32.678+03:00  INFO 13040 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-02-10T23:04:32.682+03:00  INFO 13040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-10T23:04:32.682+03:00  INFO 13040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1143 ms
+2025-02-10T23:04:32.795+03:00  INFO 13040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T23:04:32.909+03:00  INFO 13040 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@fabef2e
+2025-02-10T23:04:32.911+03:00  INFO 13040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T23:04:33.030+03:00  INFO 13040 --- [main] liquibase.database                       : Set default schema name to public
+2025-02-10T23:04:33.295+03:00  INFO 13040 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T23:04:33.325+03:00  INFO 13040 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-02-10T23:04:33.326+03:00  INFO 13040 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T23:04:33.339+03:00  INFO 13040 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-02-10T23:04:33.339+03:00  INFO 13040 --- [main] liquibase.util                           : Run:                          0
+2025-02-10T23:04:33.339+03:00  INFO 13040 --- [main] liquibase.util                           : Previously run:               8
+2025-02-10T23:04:33.339+03:00  INFO 13040 --- [main] liquibase.util                           : Filtered out:                 0
+2025-02-10T23:04:33.339+03:00  INFO 13040 --- [main] liquibase.util                           : -------------------------------
+2025-02-10T23:04:33.340+03:00  INFO 13040 --- [main] liquibase.util                           : Total change sets:            8
+2025-02-10T23:04:33.340+03:00  INFO 13040 --- [main] liquibase.util                           : Update summary generated
+2025-02-10T23:04:33.341+03:00  INFO 13040 --- [main] liquibase.command                        : Command execution complete
+2025-02-10T23:04:33.403+03:00  INFO 13040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T23:04:33.445+03:00  INFO 13040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T23:04:33.469+03:00  INFO 13040 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T23:04:33.539+03:00  INFO 13040 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2025-02-10T23:04:33.682+03:00  INFO 13040 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T23:04:33.735+03:00  INFO 13040 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T23:04:33.955+03:00  INFO 13040 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: src.spring.database.entity.User
+2025-02-10T23:04:34.566+03:00  INFO 13040 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T23:04:34.855+03:00  INFO 13040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T23:04:34.861+03:00  INFO 13040 --- [main] src.spring.config.JpaConfiguration       : JpaConfiguration init
+2025-02-10T23:04:34.865+03:00  INFO 13040 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T23:04:35.052+03:00  INFO 13040 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T23:04:35.392+03:00  INFO 13040 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T23:04:35.392+03:00  INFO 13040 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T23:04:35.437+03:00  WARN 13040 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T23:04:35.727+03:00  INFO 13040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-10T23:04:35.734+03:00  INFO 13040 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 4.629 seconds (process running for 5.199)
+2025-02-10T23:04:36.911+03:00  INFO 13040 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-10T23:04:36.911+03:00  INFO 13040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-10T23:04:36.912+03:00  INFO 13040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-10T23:06:35.629+03:00  WARN 13040 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s618ms45µs656ns).
+2025-02-10T23:06:35.660+03:00  INFO 13040 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T23:06:36.164+03:00  INFO 13040 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T23:06:36.168+03:00  INFO 13040 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T23:06:36.168+03:00  INFO 13040 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T23:06:36.168+03:00  INFO 13040 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T23:06:36.168+03:00  INFO 13040 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T23:06:36.170+03:00  INFO 13040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T23:06:36.172+03:00  INFO 13040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-10T23:16:09.978+03:00  INFO 13893 --- [main] src.spring.ApplicationRunner             : Starting ApplicationRunner using Java 21.0.6 with PID 13893 (/home/dm/JavaWorkspace/spring-boot-starter/build/classes/java/main started by dm in /home/dm/JavaWorkspace/spring-boot-starter)
+2025-02-10T23:16:09.980+03:00  INFO 13893 --- [main] src.spring.ApplicationRunner             : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T23:16:10.404+03:00  INFO 13893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-10T23:16:10.467+03:00  INFO 13893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2025-02-10T23:16:11.145+03:00  INFO 13893 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-10T23:16:11.157+03:00  INFO 13893 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-10T23:16:11.157+03:00  INFO 13893 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-10T23:16:11.280+03:00  INFO 13893 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-02-10T23:16:11.284+03:00  INFO 13893 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-10T23:16:11.284+03:00  INFO 13893 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1263 ms
+2025-02-10T23:16:11.413+03:00  INFO 13893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-10T23:16:11.529+03:00  INFO 13893 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14b95942
+2025-02-10T23:16:11.531+03:00  INFO 13893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-10T23:16:11.647+03:00  INFO 13893 --- [main] liquibase.database                       : Set default schema name to public
+2025-02-10T23:16:11.948+03:00  INFO 13893 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T23:16:11.981+03:00  INFO 13893 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-02-10T23:16:11.982+03:00  INFO 13893 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-02-10T23:16:11.989+03:00  INFO 13893 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-02-10T23:16:11.990+03:00  INFO 13893 --- [main] liquibase.util                           : Run:                          0
+2025-02-10T23:16:11.990+03:00  INFO 13893 --- [main] liquibase.util                           : Previously run:               8
+2025-02-10T23:16:11.990+03:00  INFO 13893 --- [main] liquibase.util                           : Filtered out:                 0
+2025-02-10T23:16:11.990+03:00  INFO 13893 --- [main] liquibase.util                           : -------------------------------
+2025-02-10T23:16:11.990+03:00  INFO 13893 --- [main] liquibase.util                           : Total change sets:            8
+2025-02-10T23:16:11.991+03:00  INFO 13893 --- [main] liquibase.util                           : Update summary generated
+2025-02-10T23:16:11.992+03:00  INFO 13893 --- [main] liquibase.command                        : Command execution complete
+2025-02-10T23:16:12.059+03:00  INFO 13893 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-10T23:16:12.111+03:00  INFO 13893 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-10T23:16:12.140+03:00  INFO 13893 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-10T23:16:12.233+03:00  INFO 13893 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2025-02-10T23:16:12.409+03:00  INFO 13893 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-10T23:16:12.481+03:00  INFO 13893 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-10T23:16:12.690+03:00  INFO 13893 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: src.spring.database.entity.User
+2025-02-10T23:16:13.421+03:00  INFO 13893 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-10T23:16:13.726+03:00  INFO 13893 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T23:16:13.731+03:00  INFO 13893 --- [main] src.spring.config.JpaConfiguration       : JpaConfiguration init
+2025-02-10T23:16:13.737+03:00  INFO 13893 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T23:16:13.957+03:00  INFO 13893 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-10T23:16:14.329+03:00  INFO 13893 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T23:16:14.330+03:00  INFO 13893 --- [main] s.spring.database.pool.ConnectionPool    : Initializing connection pool
+2025-02-10T23:16:14.389+03:00  WARN 13893 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-10T23:16:14.715+03:00  INFO 13893 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-10T23:16:14.723+03:00  INFO 13893 --- [main] src.spring.ApplicationRunner             : Started ApplicationRunner in 5.153 seconds (process running for 5.779)
+2025-02-10T23:16:29.992+03:00  INFO 13893 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-10T23:16:29.992+03:00  INFO 13893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-10T23:16:29.993+03:00  INFO 13893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-10T23:16:50.827+03:00  INFO 13893 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-10T23:16:51.333+03:00  INFO 13893 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-10T23:16:51.337+03:00  INFO 13893 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T23:16:51.337+03:00  INFO 13893 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T23:16:51.337+03:00  INFO 13893 --- [SpringApplicationShutdownHook] s.spring.database.pool.ConnectionPool    : Destroying connection pool
+2025-02-10T23:16:51.338+03:00  INFO 13893 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-10T23:16:51.339+03:00  INFO 13893 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-10T23:16:51.342+03:00  INFO 13893 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
