@@ -12,6 +12,8 @@ logging:
 
 spring:
   mvc:
+    format:
+      date: iso #defaulf format date
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
@@ -35,4 +37,6 @@ spring:
           batch_size: 50
           #for select
           fetch_size: 50
+    # to disable transactions at the controller level by default
+    open-in-view: false
 

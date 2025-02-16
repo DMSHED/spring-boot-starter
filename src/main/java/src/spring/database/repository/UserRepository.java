@@ -70,7 +70,7 @@ public interface UserRepository extends
      */
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @QueryHints(@QueryHint(name = "org.hibernate.fetchSize", value = "50"))//дополнительные оптимизации, которые хотим применить к запросу
-    List<User> findFirst3ByBirthdayBefore(LocalDate birthday, Sort sort);
+    List<User> findFirst3ByBirthDateBefore(LocalDate birthDate, Sort sort);
 
     //Collection, Stream
     // Slice наследуется от Streamable(аналог стрима, обертка на Итератором), есть методы
@@ -98,7 +98,7 @@ public interface UserRepository extends
     //чтобы поля таблицы и DTO совпали, можно давать алиас
     @Query(nativeQuery = true, value = "select firstname," +
                                        "lastname," +
-                                       "birth_date birthDay " +
+                                       "birth_date birthDate " +
                                        "from users " +
                                        "where company_id = :companyId")
     List<PersonalInfo2> findAllByCompanyId(Integer companyId);

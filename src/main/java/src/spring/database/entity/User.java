@@ -32,7 +32,7 @@ public class User extends AuditingEntity<Long> {
     private String username;
 
     @Column(name = "birth_date")
-    private LocalDate birthday;
+    private LocalDate birthDate;
 
     @Column(name = "firstname")
     private String firstName;
