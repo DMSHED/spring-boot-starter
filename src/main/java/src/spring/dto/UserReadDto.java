@@ -5,6 +5,7 @@ import lombok.Value;
 import src.spring.database.entity.Role;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 @Value
 public class UserReadDto {
@@ -15,4 +16,5 @@ public class UserReadDto {
     String lastname;
     Role role;
     CompanyReadDto company;
+
 }

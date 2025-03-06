@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.data.envers.repository.config.EnableEnversRepositories;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import src.spring.ApplicationRunner;
 
 import java.util.Optional;
@@ -19,6 +21,9 @@ public class AuditConfiguration {
     @Bean
     public AuditorAware<String> auditorProvider() {
         //SecurityContext.getCurrentUser().getEmail()
-        return () -> Optional.of("dmshed");
+
+        return () -> Optional.ofNullable(SecurityContextHolder.getContext().getAuthentication())
+                .map(authentication -> (UserDetails) authentication.getPrincipal())
+                .map(UserDetails::getUsername);
     }
 }

@@ -5,10 +5,12 @@ import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 import java.util.Map;
 
+//@Validated
 //можем смапить .properties или .yml в код
 @ConfigurationProperties(prefix = "db")
 public record DatabaseProperties(

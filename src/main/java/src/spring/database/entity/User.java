@@ -34,8 +34,14 @@ public class User extends AuditingEntity<Long> {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "firstname")
     private String firstName;
+
+    @Column(name = "image")
+    private String image;
 
     @Column(name = "lastname")
     private String lastName;

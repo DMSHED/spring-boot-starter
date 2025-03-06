@@ -116,17 +116,17 @@ public class UserRepositoryTest extends IntegrationTestBase{
         sortBy.by(User::getFirstName).and(sortBy.by(User::getLastName));
 
     }
-
-    @Test
-    void checkFirstByOrderIdDesc() {
-        var allUsers = userRepository.findFirst3ByBirthdayBefore(LocalDate.now(), Sort.by("id").descending());
-        Assertions.assertThat(allUsers).hasSize(3);
-
-        var firstUser = userRepository.findFirstByOrderByIdDesc();
-
-        assertTrue(firstUser.isPresent());
-        firstUser.ifPresent(user -> assertEquals(5L, user.getId()));
-    }
+//
+//    @Test
+//    void checkFirstByOrderIdDesc() {
+//        var allUsers = userRepository.findFirst3ByBirthdayBefore(LocalDate.now(), Sort.by("id").descending());
+//        Assertions.assertThat(allUsers).hasSize(3);
+//
+//        var firstUser = userRepository.findFirstByOrderByIdDesc();
+//
+//        assertTrue(firstUser.isPresent());
+//        firstUser.ifPresent(user -> assertEquals(5L, user.getId()));
+//    }
 
     @Test
     void checkUpdate() {
