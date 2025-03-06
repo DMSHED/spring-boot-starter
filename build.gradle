@@ -14,8 +14,27 @@ repositories {
 
 dependencies {
 
+    //oauth2
+    implementation 'org.springframework.security:spring-security-oauth2-client'
+    implementation 'org.springframework.security:spring-security-oauth2-jose'
+
+    //swagger
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.5'
+
+    //для тестирования с spring security
+    implementation 'org.springframework.security:spring-security-test'
+
+    //thymeleaf + spring security, нужно чтобы в страничке html, с помощью thymeleaf обращаться к security context
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+
     //thymeleaf
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    //security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    //validation starter
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
 
     // подключаем Liquibase для миграций
     implementation 'org.liquibase:liquibase-core'

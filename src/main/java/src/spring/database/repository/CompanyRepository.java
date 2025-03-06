@@ -25,6 +25,7 @@ import java.util.Optional;
 
 //ВТОРОЙ ВАРИАНТ, СОЗДАНИЕ NamedQuery, ставится над сущностью
 public interface CompanyRepository extends JpaRepository<Company, Integer> {
+
     /*
     Спринг автоматически будет создавать нам запросы, на основе названия метода
     также он подсказывает, когда пишешь название метода

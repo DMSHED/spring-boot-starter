@@ -7,6 +7,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.history.RevisionRepository;
+import org.springframework.security.core.userdetails.UserDetails;
 import src.spring.database.entity.Role;
 import src.spring.database.entity.User;
 import src.spring.dto.PersonalInfo2;
@@ -104,5 +105,5 @@ public interface UserRepository extends
     List<PersonalInfo2> findAllByCompanyId(Integer companyId);
 
 
-
+    Optional<User> findByUsername(String username);
 }

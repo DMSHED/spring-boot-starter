@@ -15,12 +15,4 @@ public class LoginController {
         return "user/login";
     }
 
-    @PostMapping("/login")
-    public String login(@ModelAttribute LoginDto loginDto,
-                        Model model) {
-
-//        return "redirect:/login";
-        return "redirect:https://google.com";
-
-    }
 }

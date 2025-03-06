@@ -3,6 +3,7 @@ package src.spring.integration.service;
 import lombok.RequiredArgsConstructor;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import src.spring.database.entity.Role;
 import src.spring.database.pool.ConnectionPool;
@@ -46,11 +47,13 @@ public class UserServiceIT extends IntegrationTestBase {
     void create() {
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test",
+                "test",
                 LocalDate.now(),
                 "test",
                 "test",
                 Role.ADMIN,
-                COMPANY_ID
+                COMPANY_ID,
+                new MockMultipartFile("test", new byte[0])
         );
         UserReadDto actualResult = userService.create(userDto);
 
@@ -61,11 +64,13 @@ public class UserServiceIT extends IntegrationTestBase {
     void update() {
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test2",
+                "test",
                 LocalDate.now(),
                 "test3",
                 "test",
                 Role.ADMIN,
-                COMPANY_ID
+                COMPANY_ID,
+                new MockMultipartFile("test", new byte[0])
         );
 
         Optional<UserReadDto> actualResult = userService.update(USER_ID, userDto);

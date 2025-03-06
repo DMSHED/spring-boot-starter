@@ -12,8 +12,9 @@ import src.spring.database.repository.UserRepository;
 import src.spring.service.CompanyService;
 import src.spring.service.UserService;
 
-@SpringBootApplication
+
 @ConfigurationPropertiesScan//будет сканировать все, что помечено @ConfigurationProperties
+@SpringBootApplication
 public class ApplicationRunner {
 
     public static void main(String[] args) {
